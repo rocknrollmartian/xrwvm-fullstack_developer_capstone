@@ -28,17 +28,8 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    # pylint: disable=line-too-long
-    'localhost',
-    'https://mbellomy81-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai' # noqa
-    # pylint: disable=line-too-long
-]
-CSRF_TRUSTED_ORIGINS = [
-    # pylint: disable=c0301
-    'https://mbellomy81-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai' # noqa
-    # pylint: disable=c0301
-]
+ALLOWED_HOSTS = ['localhost','https://mbellomy81-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'] # noqa
+CSRF_TRUSTED_ORIGINS = ['https://mbellomy81-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'] # noqa
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
